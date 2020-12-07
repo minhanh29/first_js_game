@@ -1,1 +1,1 @@
-web: open index.html
+web: open index.php
