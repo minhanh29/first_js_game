@@ -1,1 +1,1 @@
-web: open index.php
+web: node index.js
