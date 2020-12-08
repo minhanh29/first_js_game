@@ -41,7 +41,7 @@ function init()
 	scoreElement.innerHTML = score;
 }
 
-const mySpawn = ""
+let mySpawn = ""
 function spawnEnemy()
 {
 	mySpawn = setInterval(() => {
