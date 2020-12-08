@@ -181,6 +181,11 @@ function endGame(animationId)
 		complimentEL.innerHTML = "Congratulations! You're so talented!"
 		complimentEL.style.color = "orange"
 	}
+	else
+	{
+		complimentEL.innerHTML = "You're a chicken!"
+		complimentEL.style.color = "red"
+	}
 
 	clearInterval(mySpawn)
 	cancelAnimationFrame(animationId)
