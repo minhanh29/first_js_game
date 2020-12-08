@@ -41,9 +41,10 @@ function init()
 	scoreElement.innerHTML = score;
 }
 
+const mySpawn = ""
 function spawnEnemy()
 {
-	setInterval(() => {
+	mySpawn = setInterval(() => {
 		const radius = Math.random() * (30-8) + 8
 		let x, y
 
@@ -181,5 +182,6 @@ function endGame(animationId)
 		complimentEL.style.color = "orange"
 	}
 
+	clearInterval(mySpawn)
 	cancelAnimationFrame(animationId)
 }
