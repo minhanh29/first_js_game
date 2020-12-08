@@ -8,6 +8,7 @@ const ctx = canvas.getContext("2d")
 const startGameBtn = document.getElementById("startGameBtn")
 const menu = document.getElementById("menu")
 const finalScoreEl = document.getElementById("finalScore")
+const complimentEL = document.getElementById("compliment")
 
 // score
 const scoreElement = document.getElementById("gameScore")
@@ -173,5 +174,12 @@ function endGame(animationId)
 {
 	menu.style.display = 'flex'
 	finalScoreEl.innerHTML = score
+	complimentEL.style.display = "block"
+	if (score > 10000)
+	{
+		complimentEL.innerHTML = "Congratulations! You're so talented!"
+		complimentEL.style.color = "orange"
+	}
+
 	cancelAnimationFrame(animationId)
 }

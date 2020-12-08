@@ -39,10 +39,17 @@ body {
 	font-weight: bold;
 	line-height: 50%;
 	margin: 5px;
+	margin-top: 15px;
 }
 
 .descr {
 	color: gray;
+}
+
+#compliment {
+	display: none;
+	font-size: 20px;
+	color: red;
 }
 
 .btn {
@@ -57,3 +64,8 @@ body {
 	border-radius: 35px;
 	filter: drop-shadow(0 3px 8px rgba(50, 113, 168, 0.32));
 }
+
+.btn:active {
+	background-color: rgb(43, 118, 189);
+}
+
